@@ -9,28 +9,28 @@
 </head>
 
 <body>
-  <div class="card">
+  <div class="card" id="start">
     <h1 style="text-align:center;">Coding Quiz Challenge!</h1>
     <content>
         Welcome to the Quiz Challenge!
     </content>
     <content>
-    <button>Start Quiz</button>
+    <button onclick="startQuiz();">Start Quiz</button>
     </content>    
   </div>
-  <div class="card">
-    <h1 style="text-align:center;">Insert Question Here</h1>
-    <content>
+  <div class="card" id="question">
+    <h1 style="text-align:center;" id="prompt">Insert Question Here</h1>
+    <content id="response">
         Questions will go here
     </content>
     <content>
-    <button class="quiz">Answer 1</button>
-    <button class="quiz">Answer 2</button>
-    <button class="quiz">Answer 3</button>
-    <button class="quiz">Answer 4</button>
+    <button class="quiz" id="a" onclick="answerQuestion('a');">Answer 1</button>
+    <button class="quiz" id="b" onclick="answerQuestion('b');">Answer 2</button>
+    <button class="quiz" id="c" onclick="answerQuestion('c');">Answer 3</button>
+    <button class="quiz" id="d" onclick="answerQuestion('d');">Answer 4</button>
     </content>    
   </div>
-  <div class="card">
+  <div class="card" id="gameover">
     <h1 style="text-align:center;">All Done!</h1>
     <content>
        Your final score is
@@ -40,7 +40,7 @@
     <button>Submit</button>
     </content>    
   </div>
-  <div class="card">
+  <div class="card" id="highscores">
     <h1 style="text-align:center;">High Scores!</h1>
     <content>
         Leaderboard Goes Here
