@@ -19,6 +19,9 @@
     </content>    
   </div>
   <div class="card" id="question">
+      <div id="clock">
+        00:00
+      </div>
     <h1 style="text-align:center;" id="prompt">Insert Question Here</h1>
     <content id="response">
         Questions will go here
@@ -32,23 +35,23 @@
   </div>
   <div class="card" id="gameover">
     <h1 style="text-align:center;">All Done!</h1>
-    <content>
+    <content id="summary">
        Your final score is
     </content>
         <p>Enter Initials Here</p>
-        <input type="text"> 
-    <button>Submit</button>
+        <input type="text" id="name"> 
+    <button onclick="submitHighscore();">Submit</button>
     </content>    
   </div>
   <div class="card" id="highscores">
     <h1 style="text-align:center;">High Scores!</h1>
-    <content>
+    <content id="leaderboard">
         Leaderboard Goes Here
     </content>
    <content>
         <div style="margin:auto; width: fit-content;" > 
-            <button class="scores">Go Back</button>
-            <button class="scores">Clear High Scores</button>
+            <button class="scores" onclick="initializeQuiz();">Go Back</button>
+            <button class="scores" onclick="clearHighscores();">Clear High Scores</button>
         </div> 
     </content>    
   </div>

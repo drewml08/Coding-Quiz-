@@ -47,3 +47,38 @@ button {
       display: inline-block;
       margin-left: 5px;
   }
+
+  .score {
+    display: block;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.score:nth-of-type(odd) {
+    background-color: darkgray;
+}
+
+.score:nth-of-type(even) {
+    background-color: cadetblue;
+}
+
+.score p {
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+}
+
+.score p:first-child {
+    margin-right: 10%;
+    width: 60%;
+}
+
+.header {
+    border: 1px solid black;
+}
+
+#clock {
+    font-size: x-large;
+    font-weight: bolder;
+}
