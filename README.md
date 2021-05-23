@@ -4,3 +4,4 @@ The homework assignment was to build a timed interactive coding quiz using JavaS
 https://drewml08.github.io/Week4-hw/
 https://github.com/drewml08/Week4-hw
 
+![Screenshot](./Screenshot.jpg)
